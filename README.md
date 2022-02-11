@@ -10,6 +10,12 @@
   Simple classes and methods
   minimal number of classes
   codes passes all test 
+  
+  
+  refactoring is used to :
+    add functionality 
+    correct bug 
+    imrove the code architecture 
 
 2.Do you think you can “over-refactor”and do too much?How?
 
@@ -158,14 +164,20 @@
   For Guilded Roses we can use 
   
   Extract Method : Move the if code to a separate new method (exemple add quality) and replace the old code with a call to the method.
-  
-  Decompose Conditional : we have a complex conditional (if-then/else) , we can Decompose the complicated parts of the conditional into separate methods: the condition, then and else
-  
-  Replace Conditional with Polymorphism : we can create a override upgrade method in each subitem , so when we call upgrade, the upgrade are done for each subitem with specific conditions.
-  
+
   Extract Subclass : create subclass for each item type (aged brie, sulfuras, concert tickets ...)
   
+    
+      Decompose Conditional : we have a complex conditional (if-then/else) , we can Decompose the complicated parts of the conditional into separate methods: the condition, then and else
   
+    Replace Conditional with Polymorphism : we can create a override upgrade method in each subitem , so when we call upgrade, the upgrade are done for each subitem with specific conditions.
+  
+        Consolidate Conditional Expression
+
+        Replace Conditional with Polymorphism, a global update() and override in each subclass
+
+
+
   
 =========================================================
                       EXERCICE 2 : 
@@ -177,15 +189,36 @@ design patern are classic solution to occuring problems in software design, they
 
 a.When should you use one?
   when you face one of this specific problem and also when you have a problem with principles of object-oriented design
+  when your code smell bad 
+  when you work with a team to give a better understanding of your work to your collegues
   
 b.When shouldn’t you?
   if it is not necessary, so if simpler code would do just fine.
 
 2.Write  a  small  program  that  build  a pizza  with  various  toppings  using  the builder pattern. Why is this a good idea?Thinkabout scalability for instance
 
+see code 
+
+its a good idea because it's show thats you allows a total configuration with all the choise posible 
+
 
 3.Find an original idea to implement a decorator pattern (not the one from the website). Can you think of any limitations?
 No need to code here.
 
+Decorator allows us to add new functionality to a class dynamically without impacting the classes that use or inherit it.
+
+if we take your pizza builder example :
+
+Decorator: is an abstract class that inherits from pizza that allows you to decorate the base component, which is likened to adding a supplement to our pizza.
+
+HoneyDecorator, SpicyDecorator: inherit from Decorator allow us to enhance our base element without modifying our base class. 
+In this case the supplement here will be a sauce with an additional info added to the pizza  chosen.
+
+Or we can think to use the decorator for the conjured finition in the guilded rose refactoring problem
+
+This pattern is very interesting to use when designing classes that are likely to evolve strongly by dynamic addition and modification of functionalities. This is a very flexible design pattern.
+
 4.Write  a  small  program  to  implement  the behavioral design  pattern  of  your  choice. Once again, do not use the examplegiven by the website, but feel free to use them as guidance.
   
+
+seee code
