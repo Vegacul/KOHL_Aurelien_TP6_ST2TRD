@@ -221,4 +221,6 @@ This pattern is very interesting to use when designing classes that are likely t
 4.Write  a  small  program  to  implement  the behavioral design  pattern  of  your  choice. Once again, do not use the examplegiven by the website, but feel free to use them as guidance.
   
 
-seee code
+For this part, i have implement the iteraro designpattern 
+this type of pattern allows sequential access of elements without exposing the inside logic. 
+so by using the pattern we can access the elements of a collection object in a sequential manner without knowing the internal representations.
