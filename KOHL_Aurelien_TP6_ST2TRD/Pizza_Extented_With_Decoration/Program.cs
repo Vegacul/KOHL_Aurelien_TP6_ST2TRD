@@ -24,6 +24,8 @@ namespace Pizza_Extented_With_Decoration
 
         void IngredientHerbes();
 
+        IPizza SaucedPizza();
+
 
     }
 
@@ -33,7 +35,11 @@ namespace Pizza_Extented_With_Decoration
     public class ConcreteRecette : IPizza
     {
         private Pizza _pizza = new Pizza();
-
+        public string Sauce = "WIthout Sauce";
+        public IPizza SaucedPizza()
+        {
+            return this;
+        }
         // A fresh recette instance should contain a blank Pizza object, which
         // is used in further assembly.
         public ConcreteRecette()
@@ -206,6 +212,15 @@ namespace Pizza_Extented_With_Decoration
             recette.IngredientTomate();
             recette.IngredientJambon();
             recette.IngredientChampignon();
+            Console.Write(recette.GetPizza().ListIngredients());
+
+            IPizza test = new ConcreteRecette();
+
+            Console.WriteLine("Custom honey Pizza :");
+            PizzaDecorator honeyPizza = new HoneyPizzaDecorator(test);
+            honeyPizza.SaucedPizza();
+            honeyPizza.IngredientTomate();
+            honeyPizza.IngredientJambon();
             Console.Write(recette.GetPizza().ListIngredients());
         }
     }
