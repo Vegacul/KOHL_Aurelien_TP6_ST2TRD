@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31911.196
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KOHL_Aurelien_TP6_ST2TRD", "KOHL_Aurelien_TP6_ST2TRD\KOHL_Aurelien_TP6_ST2TRD.csproj", "{4FC20ED4-EF4B-4933-A102-6E928D7A1A77}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KOHL_Aurelien_TP6_ST2TRD", "KOHL_Aurelien_TP6_ST2TRD\KOHL_Aurelien_TP6_ST2TRD.csproj", "{4FC20ED4-EF4B-4933-A102-6E928D7A1A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pizza_Extented_With_Decoration", "Pizza_Extented_With_Decoration\Pizza_Extented_With_Decoration.csproj", "{9D27B447-39AE-4430-A8A7-8FA5710AF7C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "behavioral_design_pattern", "behavioral_design_pattern\behavioral_design_pattern.csproj", "{CFA374C5-D11C-4A2A-8658-C802E76F5943}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{4FC20ED4-EF4B-4933-A102-6E928D7A1A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4FC20ED4-EF4B-4933-A102-6E928D7A1A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4FC20ED4-EF4B-4933-A102-6E928D7A1A77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D27B447-39AE-4430-A8A7-8FA5710AF7C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D27B447-39AE-4430-A8A7-8FA5710AF7C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D27B447-39AE-4430-A8A7-8FA5710AF7C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D27B447-39AE-4430-A8A7-8FA5710AF7C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CFA374C5-D11C-4A2A-8658-C802E76F5943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CFA374C5-D11C-4A2A-8658-C802E76F5943}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CFA374C5-D11C-4A2A-8658-C802E76F5943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CFA374C5-D11C-4A2A-8658-C802E76F5943}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
